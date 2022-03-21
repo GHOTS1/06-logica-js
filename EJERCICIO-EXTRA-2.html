@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>ejercicio extra 2</title>
+</head>
+
+<body>
+    <script>
+        function convertirDecimalABinario(x) {
+            let Binario = 0,
+                rem, i = 1;
+            step = 1;
+            while (x != 0) {
+                rem = x % 2;
+                x = parseInt(x / 2);
+                Binario = Binario + rem * i;
+                i = i * 10;
+            }
+            document.write("este es el numero Binario: " + Binario);
+        }
+        let Decimal = prompt("Que numero Decimal desea convertir a Binario: ");
+        convertirDecimalABinario(Decimal);
+    </script>
+</body>
+
+</html>
